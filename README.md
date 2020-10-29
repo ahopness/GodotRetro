@@ -24,42 +24,42 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 *A modified psx shader.*
 
-![gif](https://i.imgur.com/V9wAYKK.mp4)
+![mp4](https://i.imgur.com/V9wAYKK.mp4)
 
 
 ### COLOR PRECISION
 
 *A color precision screen space shader.*
 
-![gif](https://i.imgur.com/jTmPIQA.mp4)
+![mp4](https://i.imgur.com/jTmPIQA.mp4)
 
 
 ### BLACK & WHITE
 
 *A B&W screen space shader.* 
 
-![gif](https://i.imgur.com/YspHvsh.mp4)
+![mp4](https://i.imgur.com/YspHvsh.mp4)
 
 
 ### GRAIN
 
 *A film grain screen space shader.* 
 
-![gif](https://i.imgur.com/2SiUVLa.mp4)
+![mp4](https://i.imgur.com/2SiUVLa.mp4)
 
 
 ### TV
 
 *A TV screen space shader.* 
 
-![gif](https://i.imgur.com/tSlFZAl.mp4)
+![mp4](https://i.imgur.com/tSlFZAl.mp4)
 
 
 ### VHS
 
 *A VHS screen space shader.* 
 
-![gif](https://i.imgur.com/y7XfFGH.mp4)
+![mp4](https://i.imgur.com/y7XfFGH.mp4)
 
 
 ### VHS Glitch
@@ -73,14 +73,14 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 *A VHS Pause screen space shader.*
 
-![gif](https://i.imgur.com/WtLWDMM.mp4)
+![mp4](https://i.imgur.com/WtLWDMM.mp4)
 
 
 ### VHS Simple Glitch
 
 *A VHS Simple Glitch screen space shader.*
 
-![Imgur](https://imgur.com/ePzJpiD)
+![mp4](https://i.imgur.com/ePzJpiD.mp4)
 
 
 
