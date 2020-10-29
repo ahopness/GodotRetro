@@ -19,68 +19,9 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 
 ## Shaders
+For some reason github dont want to play my gifs, so here the shaders :
 
-### PSX
-
-*A modified psx shader.*
-
-![mp4](https://i.imgur.com/V9wAYKK.mp4)
-
-
-### COLOR PRECISION
-
-*A color precision screen space shader.*
-
-![mp4](https://i.imgur.com/jTmPIQA.mp4)
-
-
-### BLACK & WHITE
-
-*A B&W screen space shader.* 
-
-![mp4](https://i.imgur.com/YspHvsh.mp4)
-
-
-### GRAIN
-
-*A film grain screen space shader.* 
-
-![mp4](https://i.imgur.com/2SiUVLa.mp4)
-
-
-### TV
-
-*A TV screen space shader.* 
-
-![mp4](https://i.imgur.com/tSlFZAl.mp4)
-
-
-### VHS
-
-*A VHS screen space shader.* 
-
-![mp4](https://i.imgur.com/y7XfFGH.mp4)
-
-
-### VHS Glitch
-
-*A VHS Glitch screen space shader.* 
-
-![gif](https://i.imgur.com/r3bqmaQ.mp4)
-
-
-### VHS Pause
-
-*A VHS Pause screen space shader.*
-
-![mp4](https://i.imgur.com/WtLWDMM.mp4)
-
-
-### VHS Simple Glitch
-
-*A VHS Simple Glitch screen space shader.*
-
-![mp4](https://i.imgur.com/ePzJpiD.mp4)
+https://imgur.com/a/YfeC7lh
 
 
 
