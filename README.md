@@ -80,7 +80,7 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 *A VHS Simple Glitch screen space shader.*
 
-![gif]([Imgur](https://imgur.com/ePzJpiD))
+![Imgur](https://imgur.com/ePzJpiD)
 
 
 
