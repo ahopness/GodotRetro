@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/debug_npc.obj-97bdf3e6ec318a39b14e381325a936bd.mesh"
+
+[deps]
+
+files=[ "res://.import/debug_npc.obj-97bdf3e6ec318a39b14e381325a936bd.mesh" ]
+
+source_file="res://Example/Models/scn_debugroom/debug_npc.obj"
+dest_files=[ "res://.import/debug_npc.obj-97bdf3e6ec318a39b14e381325a936bd.mesh", "res://.import/debug_npc.obj-97bdf3e6ec318a39b14e381325a936bd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

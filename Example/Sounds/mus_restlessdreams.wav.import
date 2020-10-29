@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mus_restlessdreams.wav-833e8a6ab6af1130f6afbec2c2bfa854.sample"
+
+[deps]
+
+source_file="res://Example/Sounds/mus_restlessdreams.wav"
+dest_files=[ "res://.import/mus_restlessdreams.wav-833e8a6ab6af1130f6afbec2c2bfa854.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=11025.0
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
