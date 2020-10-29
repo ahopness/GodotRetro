@@ -45,6 +45,13 @@ https://imgur.com/a/YfeC7lh
 **Done!** Have fun!
 
 
+### DISCLAMER :
+
+ - To use 2+ shaders at the same time, you gotta use a *BackBufferCopy* set as *Viewport* for each effect.
+
+ - For UI, be sure to set it above the shaders for then to be aplied for more imersion.
+
+
 
 ## DEMO
 
@@ -70,14 +77,6 @@ Shift = Run.
 1 = change shader on layer 1.
 
 2 = change shader on layer 2.
-
-
-
-### DISCLAMER :
-
- - To use 2+ shaders at the same time, you gotta use a *BackBufferCopy* set as *Viewport* for each effect.
-
- - For UI, be sure to set it above the shaders for then to be aplied for more imersion.
 
 
 
