@@ -24,63 +24,63 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 *A modified psx shader.*
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/psx.gif?raw=true)
+![gif](https://imgur.com/V9wAYKK)
 
 
 ### COLOR PRECISION
 
 *A color precision screen space shader.*
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/cp.gif?raw=true)
+![gif](https://imgur.com/jTmPIQA)
 
 
 ### BLACK & WHITE
 
 *A B&W screen space shader.* 
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/B&W.gif?raw=true)
+![gif](https://imgur.com/YspHvsh)
 
 
 ### GRAIN
 
 *A film grain screen space shader.* 
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/grain.gif?raw=true)
+![gif](https://imgur.com/2SiUVLa)
 
 
 ### TV
 
 *A TV screen space shader.* 
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/tv.gif?raw=true)
+![gif](https://imgur.com/tSlFZAl)
 
 
 ### VHS
 
 *A VHS screen space shader.* 
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/vhs.gif?raw=true)
+![gif](https://imgur.com/y7XfFGH)
 
 
 ### VHS Glitch
 
 *A VHS Glitch screen space shader.* 
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/vhsg.gif?raw=true)
+![gif](https://imgur.com/r3bqmaQ)
 
 
 ### VHS Pause
 
 *A VHS Pause screen space shader.*
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/vhsp.gif?raw=true)
+![gif](https://imgur.com/WtLWDMM)
 
 
 ### VHS Simple Glitch
 
 *A VHS Simple Glitch screen space shader.*
 
-![gif](https://github.com/Ahopness/GodotRetro/blob/main/Fotage/vhssg.gif?raw=true)
+![gif](https://imgur.com/ePzJpiD)
 
 
 
