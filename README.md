@@ -1,6 +1,6 @@
 # GodotRetro
 
-![Fotage\icon.png](Logo)
+![icon.png](Logo)
 
 - - - - - - -
 
