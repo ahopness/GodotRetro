@@ -4,14 +4,14 @@
 
 - - - - - - -
 
-[<img align="center" alt="License" scr="https://img.shields.io/github/license/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/blob/main/LICENSE)
-[<img align="center" alt="Stars" scr="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/stargazers)
-[<img align="center" alt="Forks" scr="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/network/members)
-[<img align="center" alt="Version" scr="https://img.shields.io/badge/version-1.2.0-b339e3?style=flat-square">](https://github.com/Ahopness/GodotRetro/stargazers)
-[<img align="center" alt="Size" scr="https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro)
-GodotRetro/stargazers)
-[<img align="center" alt="LastUpdate" scr="https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/releases)
-[<img align="center" alt="Twiiter" scr="https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square">](https://twitter.com/ahopness)
+(<img align="center" alt="License" scr="https://img.shields.io/github/license/Ahopness/GodotRetro?color=b339e3&style=flat-square">)[https://github.com/Ahopness/GodotRetro/blob/main/LICENSE]
+(<img align="center" alt="Stars" scr="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square">)[https://github.com/Ahopness/GodotRetro/stargazers]
+(<img align="center" alt="Forks" scr="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square">)[https://github.com/Ahopness/GodotRetro/network/member]
+(<img align="center" alt="Version" scr="https://img.shields.io/badge/version-1.2.0-b339e3?style=flat-square")[(https://github.com/Ahopness/GodotRetro/stargazers]
+(<img align="center" alt="Size" scr="https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square">)[https://github.com/Ahopness/GodotRetro/
+GodotRetro/stargazers]
+(<img align="center" alt="LastUpdate" scr="https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square">)[https://github.com/Ahopness/GodotRetro/releases)
+(<img align="center" alt="Twiiter" scr="https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square">)[https://twitter.com/ahopness]
 
 
 
