@@ -1,6 +1,6 @@
 # GodotRetro
 
-![icon.png](Logo)
+![Logo](https://raw.githubusercontent.com/Ahopness/GodotRetro/main/icon.png)
 
 - - - - - - -
 
