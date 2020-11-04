@@ -50,7 +50,6 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 
 ## Shaders
-
 For some reason github dont want to play my gifs, so here the shaders :
 
 https://imgur.com/a/YfeC7lh
@@ -99,14 +98,6 @@ Free easy to lean demo is available with the pack.
 | Shift |            1             |             2            |
 |-------|--------------------------|--------------------------|
 |  Run  | change shader on layer 1 | change shader on layer 2 |
-
-
-
-### DISCLAMER :
-
- - To use 2+ shaders at the same time, you gotta use a *BackBufferCopy* set as *Viewport* for each effect.
-
- - For UI, be sure to set it above the shaders for then to be aplied for more imersion.
 
 
 
