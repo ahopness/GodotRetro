@@ -4,13 +4,13 @@
 
 - - - - - - -
 
-![https://img.shields.io/github/license/Ahopness/GodotRetro?color=b339e3&style=flat-square](https://github.com/Ahopness/GodotRetro/blob/main/LICENSE)
-![https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square](https://github.com/Ahopness/GodotRetro/stargazers)
-![https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square](https://github.com/Ahopness/GodotRetro/network/member)
-![https://img.shields.io/badge/version-1.2.0-b339e3?style=flat-square]((https://github.com/Ahopness/GodotRetro/stargazers)
-![https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square](https://github.com/Ahopness/GodotRetro/stargazers)
-![https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square](https://github.com/Ahopness/GodotRetro/releases)
-![https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square](https://twitter.com/ahopness)
+![https://github.com/Ahopness/GodotRetro/blob/main/LICENSE](https://img.shields.io/github/license/Ahopness/GodotRetro?color=b339e3&style=flat-square)
+![https://github.com/Ahopness/GodotRetro/stargazers](https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square)
+![https://github.com/Ahopness/GodotRetro/network/member](https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square)
+![https://github.com/Ahopness/GodotRetro/stargazers](https://img.shields.io/badge/version-1.2.0-b339e3?style=flat-square)
+![https://github.com/Ahopness/GodotRetro/stargazers](https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square)
+![https://github.com/Ahopness/GodotRetro/releases](https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square)
+![https://twitter.com/ahopness](https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square)
 
 
 
