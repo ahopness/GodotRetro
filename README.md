@@ -1,8 +1,39 @@
 # GodotRetro
 
-![png](Fotage\icon.png)
+[<img align="center" alt="Logo"](Fotage\icon.png)
 
-Version 1.0
+- - - - - - -
+
+[<img align="center" alt="License" scr="https://img.shields.io/github/license/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/blob/main/LICENSE)
+[<img align="center" alt="Stars" scr="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/stargazers)
+[<img align="center" alt="Forks" scr="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/network/members)
+[<img align="center" alt="Version" scr="https://img.shields.io/badge/version-1.2.0-b339e3?style=flat-square">](https://github.com/Ahopness/GodotRetro/stargazers)
+[<img align="center" alt="Size" scr="https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro)
+GodotRetro/stargazers)
+[<img align="center" alt="LastUpdate" scr="https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square">](https://github.com/Ahopness/GodotRetro/releases)
+[<img align="center" alt="Twiiter" scr="https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square">](https://twitter.com/ahopness)
+
+
+
+## Content
+
+* [About](#about)
+
+* [License](#license)
+
+* [Shaders](#shaders)
+
+* [Instalation](#instalation)
+
+* [Demo](#demo)
+
+* [Features](#features)
+
+* [Limitations](#limitations)
+
+* [TODO](#todo)
+
+* [Credits](#credits)
 
 
 
@@ -20,67 +51,9 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 ## Shaders
 
-### PSX
+For some reason github dont want to play my gifs, so here the shaders :
 
-*A modified psx shader.*
-
-![gif](Fotage\psx.gif)
-
-
-### COLOR PRECISION
-
-*A color precision screen space shader.*
-
-![gif](Fotage\cp.gif)
-
-
-### BLACK & WHITE
-
-*A B&W screen space shader.* 
-
-![gif](Fotage\B&W.gif)
-
-
-### GRAIN
-
-*A film grain screen space shader.* 
-
-![gif](Fotage\grain.gif)
-
-
-### TV
-
-*A TV screen space shader.* 
-
-![gif](Fotage\tv.gif)
-
-
-### VHS
-
-*A VHS screen space shader.* 
-
-![gif](Fotage\vhs.gif)
-
-
-### VHS Glitch
-
-*A VHS Glitch screen space shader.* 
-
-![gif](Fotage\vhsg.gif)
-
-
-### VHS Pause
-
-*A VHS Pause screen space shader.*
-
-![gif](Fotage\vhsp.gif)
-
-
-### VHS Simple Glitch
-
-*A VHS Simple Glitch screen space shader.*
-
-![gif](Fotage\vhssg.gif)
+https://imgur.com/a/YfeC7lh
 
 
 
@@ -93,8 +66,8 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 ***For normal shader*** :
 
-
 2. Just add the shader script to a shader material.
+
 
 ***For screen space shaders*** :
 
@@ -102,6 +75,13 @@ Godot Retro is free to use and modify by everybody, *however*, the name of the d
 
 
 **Done!** Have fun!
+
+
+### DISCLAMER :
+
+- To use 2+ shaders at the same time, you gotta use a BackBufferCopy set as Viewport for each effect.
+
+- For UI, be sure to set it above the shaders for then to be aplied for more imersion.
 
 
 
@@ -112,23 +92,13 @@ Free easy to lean demo is available with the pack.
 
 **Demo Controls**:
 
-W = Foward.
+|    W   |     A     |     S     |     D      |     E     |     Q     |
+|--------|-----------|-----------|------------|-----------|-----------|
+| Foward | Turn Left | Backwards | Turn Right | Walk Left | Walk Left |
 
-S = Backwards.
-
-A = Turn left.
-
-D = Turn right.
-
-Q = Walk left.
-
-E = Walk right.
-
-Shift = Run.
-
-1 = change shader on layer 1.
-
-2 = change shader on layer 2.
+| Shift |            1             |             2            |
+|-------|--------------------------|--------------------------|
+|  Run  | change shader on layer 1 | change shader on layer 2 |
 
 
 
@@ -146,7 +116,7 @@ Shift = Run.
  
  - **Frequentily updated**
 
- - Well done **demo project**
+ - 2 well done **demo projects**
 
 
 
@@ -160,14 +130,12 @@ Unfortnetly, some shaders arent 100% perfect.
 
  - The Color Precission shader's dithering dont work because of Godot's limitation.
 
- 
- #All the limitations should be fixed with time and from help from contributors.
+
+ 'All the limitations should be fixed with time and from help from contributors.'
 
 
 
 ## TODO
-
- - Add more options in some shaders.
 
  - Add dithering shader inside or outside the color precission shader.
 

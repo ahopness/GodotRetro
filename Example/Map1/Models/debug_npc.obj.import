@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/debug_npc.obj-9160b952d96fa3c465559e84c080b879.mesh"
+
+[deps]
+
+files=[ "res://.import/debug_npc.obj-9160b952d96fa3c465559e84c080b879.mesh" ]
+
+source_file="res://Example/Map1/Models/debug_npc.obj"
+dest_files=[ "res://.import/debug_npc.obj-9160b952d96fa3c465559e84c080b879.mesh", "res://.import/debug_npc.obj-9160b952d96fa3c465559e84c080b879.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

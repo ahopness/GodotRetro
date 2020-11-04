@@ -11,25 +11,24 @@ void vertex(){
 	time = TIME;
 }
 
-float grain (vec2 st) {
-    return fract(sin(dot(st.xy, vec2(17.0,180.)))* 2500. + time);
+float grain (vec2 st){
+	return fract(sin(dot(st.xy, vec2(17.0,180.)))* 2500. + time);
 }
 
-void fragment()
-{
-    //Coords
+void fragment(){
+	//Coords
 	vec2 uv = UV;
-    uv.y = (uv.y - 1.0) * -1.0;
+	uv.y = (uv.y - 1.0) * -1.0;
 	
-    //Produce some noise based on the coords
-    vec3 grainPlate = vec3(grain(uv));
-    
-    //Get the image
-    vec4 img = texture(SCREEN_TEXTURE, uv);
-    
-    //Mix the two signals together
-    vec3 mixer = mix(img.rgb, grainPlate, .1);
+	//Produce some noise based on the coords
+	vec3 grainPlate = vec3(grain(uv));
 	
-    
-    COLOR = vec4(mixer,1.0); 
+	//Get the image
+	vec4 img = texture(SCREEN_TEXTURE, uv);
+	
+	//Mix the two signals together
+	vec3 mixer = mix(img.rgb, grainPlate, .1);
+	
+	
+	COLOR = vec4(mixer,1.0); 
 }

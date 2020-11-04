@@ -16,7 +16,6 @@ float nrand(float x, float y){
 }
 
 void fragment(){
-	
 	float sl_thresh = dot(vec2(1.0 - _ScanLineJitter * 1.2), vec2(1.0 - _ScanLineJitter * 1.2));
 	float sl_disp = 0.002 + pow(_ScanLineJitter, 3) * 0.05;
 	vec2 sl = vec2(sl_disp, sl_thresh);
@@ -50,6 +49,4 @@ void fragment(){
 	vec4 render = vec4(final1.r, final2.g, final1.b, 1);
 	
 	COLOR = render;
-	
-	
 }

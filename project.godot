@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="GodotRetro"
-run/main_scene="res://Example/Scenes/scn_debugroom.tscn"
+run/main_scene="res://Example/MapSelection/Scenes/scn_mapselection.tscn"
 config/icon="res://icon.png"
 
 [audio]
@@ -25,7 +25,7 @@ default_bus_layout="res://Example/bus_main.tres"
 
 [autoload]
 
-GameManeger="*res://Example/Scripts/GameManeger.gd"
+GameManeger="*res://Example/scr_gm.gd"
 
 [display]
 

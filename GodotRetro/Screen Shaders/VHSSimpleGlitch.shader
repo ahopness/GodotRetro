@@ -6,10 +6,10 @@
 shader_type canvas_item;
 
 uniform float range = 0.03;
-uniform float noiseQuality = 250.0;
-uniform float noiseIntensity = 0.007;
+uniform float noiseQuality :hint_range(0,250) = 250.0;
+uniform float noiseIntensity :hint_range(0, 0.05) = 0.007;
 uniform float offsetIntensity = 0.01;
-uniform float colorOffsetIntensity = 0.9;
+uniform float colorOffsetIntensity :hint_range(0,1.5) = 0.9;
 
 float rand(vec2 co){
 	return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);

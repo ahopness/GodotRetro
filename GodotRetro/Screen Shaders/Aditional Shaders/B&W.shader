@@ -12,26 +12,19 @@ void fragment(){
 	vec3 pixelColor = texture(SCREEN_TEXTURE, percent).xyz;
 	
 	float mode = 3.0;
-	if (mode > 3.0)
-	{
+	if (mode > 3.0){
 		// sRGB monitors grey scale coefficients
 		float pixelGrey = dot(pixelColor, vec3(0.2126, 0.7152, 0.0722));
 		pixelColor = vec3(pixelGrey);
-	}
-	else if (mode > 2.0)
-	{
+	}else if (mode > 2.0){
 		// SD television grey scale coefficients
 		float pixelGrey = dot(pixelColor, vec3(0.3, 0.59, 0.11));
 		pixelColor = vec3(pixelGrey);
-	}
-	else if (mode > 1.0)
-	{
+	}else if (mode > 1.0){
 		// naive grey scale conversion - average R,G and B
 		float pixelGrey = dot(pixelColor, vec3(1.0/3.0));
 		pixelColor = vec3(pixelGrey);
-	}
-	else
-	{
+	}else{
 		// color
 	}
 	
