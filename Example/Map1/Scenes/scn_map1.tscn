@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Example/Map1/Scripts/scr_player.gd" type="Script" id=1]
 [ext_resource path="res://Example/Map1/Scripts/scr_ui.gd" type="Script" id=2]
@@ -21,6 +21,10 @@
 [ext_resource path="res://GodotRetro/Other/Fonts/font_vcr_csd_mono.ttf" type="DynamicFontData" id=19]
 [ext_resource path="res://GodotRetro/Other/Fonts/font_vcr_osd_mono.tres" type="DynamicFont" id=20]
 [ext_resource path="res://Example/Map1/Sounds/mus_restlessdreams.wav" type="AudioStream" id=21]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/LensDistortion.shader" type="Shader" id=22]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/SimpleGrain.shader" type="Shader" id=23]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/BetterCC.shader" type="Shader" id=24]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/Sharpness.shader" type="Shader" id=25]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -105,8 +109,27 @@ shader_param/COLOR_FACTOR = 7.0
 
 [sub_resource type="ShaderMaterial" id=7]
 shader = ExtResource( 13 )
+shader_param/screen_size = Vector2( 320, 200 )
+shader_param/colored = false
+shader_param/color_amount = 0.6
+shader_param/grain_amount = 0.025
+shader_param/grain_size = 1.6
+shader_param/lum_amount = 1.3
 
 [sub_resource type="ShaderMaterial" id=8]
+shader = ExtResource( 23 )
+
+[sub_resource type="ShaderMaterial" id=9]
+shader = ExtResource( 24 )
+shader_param/Shadows = Vector3( 0, 0, 0.152 )
+shader_param/Midtones = Vector3( 0, 0, 0 )
+shader_param/Hilights = Vector3( 0.052, 0.059, 0 )
+
+[sub_resource type="ShaderMaterial" id=16]
+shader = ExtResource( 25 )
+shader_param/sharpen_amount = 3.0
+
+[sub_resource type="ShaderMaterial" id=10]
 shader = ExtResource( 15 )
 shader_param/vertJerkOpt = 1.0
 shader_param/vertMovementOpt = 1.0
@@ -115,34 +138,40 @@ shader_param/scalinesOpt = 1.0
 shader_param/rgbOffsetOpt = 0.1
 shader_param/horzFuzzOpt = 1.0
 
-[sub_resource type="ShaderMaterial" id=9]
+[sub_resource type="ShaderMaterial" id=11]
 shader = ExtResource( 11 )
 shader_param/tape_wave_amount = 0.005
 shader_param/tape_crease_amount = 10.0
 shader_param/color_displacement = 0.7
 shader_param/lines_velocity = 0.1
 
-[sub_resource type="ShaderMaterial" id=10]
+[sub_resource type="ShaderMaterial" id=12]
 shader = ExtResource( 16 )
 shader_param/_ScanLineJitter = 0.25
 shader_param/_VerticalJump = 0.01
 shader_param/_HorizontalShake = 0.0
 shader_param/_ColorDrift = 0.1
 
-[sub_resource type="ShaderMaterial" id=11]
+[sub_resource type="ShaderMaterial" id=13]
 shader = ExtResource( 17 )
 shader_param/shake_amount_x = 322.103
 shader_param/shake_amount_y = 261.425
 shader_param/white_hlines = 50.0
 shader_param/white_vlines = 80.0
 
-[sub_resource type="ShaderMaterial" id=12]
+[sub_resource type="ShaderMaterial" id=14]
 shader = ExtResource( 18 )
 shader_param/range = 0.03
 shader_param/noiseQuality = 250.0
 shader_param/noiseIntensity = 0.007
 shader_param/offsetIntensity = 0.01
 shader_param/colorOffsetIntensity = 0.2
+
+[sub_resource type="ShaderMaterial" id=15]
+shader = ExtResource( 22 )
+shader_param/show_curvature = true
+shader_param/curvature_x_amount = 4.5
+shader_param/curvature_y_amount = 3.0
 
 [node name="scn_map1" type="Spatial"]
 
@@ -325,12 +354,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SSS Layer 2" type="BackBufferCopy" parent="UI/CanvasLayer/VHS/Shader"]
-position = Vector2( 160, 100 )
-scale = Vector2( 1.6, 1 )
-copy_mode = 2
-
-[node name="SSS TV" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
+[node name="SSS SGrain" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 1"]
 visible = false
 material = SubResource( 8 )
 anchor_right = 1.0
@@ -345,7 +369,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SSS VHS" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
+[node name="SSS BCC" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 1"]
 visible = false
 material = SubResource( 9 )
 anchor_right = 1.0
@@ -360,7 +384,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SSS VHSGlitch" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
+[node name="SSS Sharpness" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 1"]
+visible = false
+material = SubResource( 16 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SSS Layer 2" type="BackBufferCopy" parent="UI/CanvasLayer/VHS/Shader"]
+position = Vector2( 160, 100 )
+scale = Vector2( 1.6, 1 )
+copy_mode = 2
+
+[node name="SSS TV" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
 visible = false
 material = SubResource( 10 )
 anchor_right = 1.0
@@ -375,7 +419,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SSS VHSPause" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
+[node name="SSS VHS" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
 visible = false
 material = SubResource( 11 )
 anchor_right = 1.0
@@ -390,9 +434,59 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SSS VHSSimpleGlitch" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
+[node name="SSS VHSGlitch" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
 visible = false
 material = SubResource( 12 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SSS VHSPause" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
+visible = false
+material = SubResource( 13 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SSS VHSSimpleGlitch" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 2"]
+visible = false
+material = SubResource( 14 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SSS Layer 3" type="BackBufferCopy" parent="UI/CanvasLayer/VHS/Shader"]
+position = Vector2( 160, 100 )
+scale = Vector2( 1.6, 1 )
+copy_mode = 2
+
+[node name="SSS LD" type="TextureRect" parent="UI/CanvasLayer/VHS/Shader/SSS Layer 3"]
+visible = false
+material = SubResource( 15 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -100.0

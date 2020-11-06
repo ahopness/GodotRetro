@@ -9,12 +9,12 @@ uniform float SCREEN_WIDTH = 320.; // Lower num - bigger pixels (this will be th
 uniform float COLOR_FACTOR :hint_range(0., 10.) = 4.;   // Higher num - higher colors quality
 //uniform float DITHERING_STRENTH :hint_range(0., .07) = 0.005; // Be carefull with this one, dithering can get messy really easily
 
-const mat4 ditherTable = mat4(
-	vec4(-4.0, 0.0, -3.0, 1.0),
-	vec4(2.0, -2.0, 3.0, -1.0),
-	vec4(-3.0, 1.0, -4.0, 0.0),
-	vec4(3.0, -1.0, 2.0, -2.0)
-);
+//const mat4 ditherTable = mat4(
+//	vec4(-4.0, 0.0, -3.0, 1.0),
+//	vec4(2.0, -2.0, 3.0, -1.0),
+//	vec4(-3.0, 1.0, -4.0, 0.0),
+//	vec4(3.0, -1.0, 2.0, -2.0)
+//);
 
 void fragment(){                  
 	// Reduce pixels            
@@ -26,7 +26,7 @@ void fragment(){
 	// Get source color
 	vec3 col = texture(SCREEN_TEXTURE, uv).xyz;     
 	
-	// Dither - CURRECTLY NOT WORKING IN 3.2.3
+	// Dithering - CURRECTLY NOT WORKING IN 3.2.3
 	//int row = int( coor.x ) % 4;
 	//int column = int( coor.y ) % 4;
 	//col += ditherTable[row][column] * DITHERING_STRENTH;

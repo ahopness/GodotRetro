@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 func _on_btn_debug_pressed():
 	get_tree().change_scene("res://Example/Map1/Scenes/scn_map1.tscn")

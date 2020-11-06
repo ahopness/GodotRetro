@@ -4,7 +4,7 @@
 //SHADERTOY LINK : https://thebookofshaders.com/edit.php#06/hsb-colorwheel.frag
 
 shader_type spatial;
-render_mode cull_disabled, specular_disabled, diffuse_lambert;
+render_mode cull_disabled, specular_disabled, diffuse_lambert, unshaded;
 
 const float TWO_PI = 6.28318530718;
 
