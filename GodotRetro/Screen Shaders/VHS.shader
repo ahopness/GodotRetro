@@ -1,14 +1,15 @@
 //SHADER ORIGINALY CREADED BY "FMS_Cat" FROM SHADERTOY
 //PORTED AND MODIFYED TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
+//COMATIBLE WITH : GLES2, GLES3
 //SHADERTOY LINK : https://www.shadertoy.com/view/XtBXDt
 
 shader_type canvas_item;
 
-uniform float tape_wave_amount :hint_range (0, .04) = 0.005;
-uniform float tape_crease_amount :hint_range (0, 15) = 10.0;
-uniform float color_displacement :hint_range (0, 5) = 2;
-uniform float lines_velocity :hint_range (0, 5) = .1;
+uniform float tape_wave_amount :hint_range (0, .04) = 0.003;
+uniform float tape_crease_amount :hint_range (0, 15) = 2.5;
+uniform float color_displacement :hint_range (0, 5) = 1;
+uniform float lines_velocity :hint_range (0, 5) = 0.1;
 
 const float PI = 3.14159265;
 
@@ -42,8 +43,7 @@ float noise( vec2 _v ){
 }
 
 void fragment(){
-	vec2 uv = UV;
-	uv.y = (uv.y - 1.0) * -1.0;
+	vec2 uv = FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 	vec2 uvn = uv;
 	vec3 col = vec3( 0.0 );
 	

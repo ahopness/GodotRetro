@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/debug_npc.obj-b72fa0d1ef0c75c085a4fa1208261a8d.mesh"
+
+[deps]
+
+files=[ "res://.import/debug_npc.obj-b72fa0d1ef0c75c085a4fa1208261a8d.mesh" ]
+
+source_file="res://Examples/Map1 - PSone/debug_npc.obj"
+dest_files=[ "res://.import/debug_npc.obj-b72fa0d1ef0c75c085a4fa1208261a8d.mesh", "res://.import/debug_npc.obj-b72fa0d1ef0c75c085a4fa1208261a8d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

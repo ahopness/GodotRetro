@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://Examples/Map1 - PSone/tex_debug.png" type="Texture" id=1]
+[ext_resource path="res://GodotRetro/Object Shaders/PSX Shaders/psx_lit.shader" type="Shader" id=2]
+
+[resource]
+shader = ExtResource( 2 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/specular_intensity = 0.0
+shader_param/resolution = 125.0
+shader_param/cull_distance = 25.0
+shader_param/affine_texture_mapping_amount = 0.7
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/uv_offset = Vector2( 0, 0 )
+shader_param/albedoTex = ExtResource( 1 )

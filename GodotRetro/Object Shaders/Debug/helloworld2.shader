@@ -1,6 +1,6 @@
 //SHADER GRABED FROM THE BOOK OF SHADERS
 //PORTED AND MODIFYED TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
 //SHADERTOY LINK : https://thebookofshaders.com/edit.php#06/hsb-colorwheel.frag
 
 shader_type spatial;

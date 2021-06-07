@@ -1,29 +1,28 @@
 # Godot Retro
 
-![Logo](https://raw.githubusercontent.com/Ahopness/GodotRetro/main/icon.png "Logo")
+![Logo](https://i.imgur.com/shnmTe5.png "Logo")
 
 - - - - - - -
 
 [![License](https://img.shields.io/github/license/Ahopness/GodotRetro?color=b339e3&style=flat-square "License")](http://github.com/Ahopness/GodotRetro/blob/main/LICENSE "License")
 [![Stars](https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square "Stars")](http://github.com/Ahopness/GodotRetro/stargazers "Stars")
 [![Forks](https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square "Forks")](http://github.com/Ahopness/GodotRetro/network/member "Forks")
-[![Releases](https://img.shields.io/badge/version-2.0.0-b339e3?style=flat-square "Releases")](http://github.com/Ahopness/GodotRetro/releases "Releases")
+[![Releases](https://img.shields.io/badge/version-3.0.0-b339e3?style=flat-square "Releases")](http://github.com/Ahopness/GodotRetro/releases "Releases")
 ![Repo Size](https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square "Repo Size")
 ![Last Commition](https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square "Last Commition")
 [![Twitter](https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square "Twitter")](http://twitter.com/ahopness "Twitter")
 
 
 
-## Content
+## Sumary
 
 * [About](#about)
 * [License](#license)
 * [Shaders](#shaders)
 * [Instalation](#instalation)
-* [Demo](#demo)
+* [Examples](#examples)
 * [Features](#features)
 * [Limitations](#limitations)
-* [TODO](#todo)
 * [Credits](#credits)
 
 
@@ -36,103 +35,80 @@
 
 ## License
 
-Godot Retro is free to use and modify by everybody, *however*, the name of the developer and porter(me) of the used shader must be credited.
+* Shaders
 
-Godot Retro uses the [MIT License](https://github.com/Ahopness/GodotRetro/blob/main/LICENSE).
+All shaders are licensed under **CC0**, with the exeption of the *Glitch* and the *NTSC Basic* shaders, who are licensed under **MIT**. 
+
+* Example Scenes
+
+ * *Models*, *scripts*, *textures* and *sounds* are all under **CC0**.
+
+ * The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed under **MIT**.
 
 
 
 ## Shaders
 
-### PSX
+- Glitch
 
-*A modified psx shader.*
+- NTSC Basic
 
-![PSX](https://i.imgur.com/x4j1O7U.gif "PSX")
+- Grain
 
+- Simple Grain
 
-### COLOR PRECISION
+- Jpeg Compression
 
-*A color precision screen space shader.*
+- Lens Distortion
 
-![Color Precision](https://i.imgur.com/9gZrMev.gif "Color Precision")
+- NTSC
 
+- Simple Glitch
 
-### BLACK & WHITE
+- TV
 
-*A B&W screen space shader.* 
+- VHS
 
-![B&W](https://i.imgur.com/i9TAX9f.gif "B&W")
+- VHS Pause
 
+- B&W
 
-### GRAIN
+- Better CC
 
-*A film grain screen space shader.* 
+- Blur
 
-![Grain](https://i.imgur.com/gMdSFef.gif "Grain")
+- Color Precission
 
+- Sharpness
 
-### SIMPLE GRAIN
+- Hello World
 
-*A simple film grain screen space shader.* 
+- Hello World 2
 
-![sGrain](https://i.imgur.com/unmRiis.gif "sGrain")
+### Recommendation
 
+The shaders looks the best when they are combined!
 
-### BETTER COLOR CORRECTION
+**Example :**
 
-*A color correction screen space shader that adds more options then the godot's built-in CC.* 
+This scene uses the following combination : **Lens Distortion + Grain + TV**
 
-![BCC](https://i.imgur.com/9YgI8gv.gif "BCC")
+![MAP 3](https://i.imgur.com/PnSuZkd.mp4 "MAP 3")
 
+And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
-### LENS DISTORTION
-
-*A lens distortion screen space shader.* 
-
-![LD](https://i.imgur.com/DaO5dSu.gif "LD")
-
-
-### SHARPNESS
-
-*A sharpness screen space shader.* 
-
-![S](https://i.imgur.com/IbG1rk4.gif "S")
+![MAP 2](https://i.imgur.com/sTt23Xf.mp4 "MAP 2")
 
 
-### TV
+- Tip 1 : **Sharpness** is a must have if using any of the *TV*, *VHS* or the *NTSC* shaders for getting a more realistic retro effect!
 
-*A TV screen space shader.* 
+- Tip 2 : **Lens Distortion** and high FOV combined can give a MTV 2000 blumbers aesthetics if used correctly!
 
-![TV](https://i.imgur.com/3pzUdaa.gif "TV")
+- Tip 3 : Be careful with **Grain**! It can get messy really easily!
 
+- Tip 4 : All of the shaders can go beyond their default range values, just open the shader code and just the numbers inside the *hint_range()* function in the variables section.
 
-### VHS
-
-*A VHS screen space shader.* 
-
-![VHS](https://i.imgur.com/o2IYf8i.gif "VHS")
-
-
-### VHS Glitch
-
-*A VHS Glitch screen space shader.* 
-
-![VHSG](https://i.imgur.com/NJlnwkY.gif "VHSG")
-
-
-### VHS Pause
-
-*A VHS Pause screen space shader.*
-
-![VHSP](https://i.imgur.com/TU9CD8f.gif "VHSP")
-
-
-### VHS Simple Glitch
-
-*A VHS Simple Glitch screen space shader.*
-
-![VHSsG](https://i.imgur.com/yqrmWZr.gif "VHSsG")
+- Tip 5 : **AWAYS** check the headers inside the shader you are using, theres information about *compatibility*, *credits* and *licesing* inthere!
 
 
 
@@ -140,22 +116,24 @@ Godot Retro uses the [MIT License](https://github.com/Ahopness/GodotRetro/blob/m
 
 **To use the shaders you gotta** :
 
-1. Copy the _GodotRetro_ folder to your project (can be anywhere)
+1. Copy the *GodotRetro* folder to your project (can be anywhere)
 
 
 ***For normal shader*** :
 
-2. Just add the shader script to a shader material.
+2. Just add the shader to a *ShaderMaterial*.
 
 
 ***For screen space shaders*** :
 
-2. Add the shader on a TextureRect with the _white.png_ as texture.
+2. Create a *ColorRect* and make it a *FullRect* in the *Layout* options
+
+3. Assign the shader of preference to a *ShaderMaterial* in the used *ColorRect*.
 
 
-**Example : **
+**Example :**
 
-![example](https://i.imgur.com/sTRhlJU.png)
+![example](https://i.imgur.com/sSti5i8.png)
 
 
 **Done!** Have fun!
@@ -169,30 +147,39 @@ Godot Retro uses the [MIT License](https://github.com/Ahopness/GodotRetro/blob/m
 
 
 
-## DEMO
+## Examples
 
-Free easy to lean demo is available with the pack.
+4 free easy to learn examples are available with the pack.
+
+![MAP 1](https://i.imgur.com/uXOVbsK.mp4 "MAP 1")
+![MAP 4](https://i.imgur.com/WF2kd5W.mp4 "MAP 4")
 
 
-**Demo Controls**:
+**General controls**:
+
+|    ESC    |
+|-----------|
+| Quit Game |
+
+**Map 1 controls**:
 
 |    W   |     A     |     S     |     D      |     E     |     Q     | Shift |
 |--------|-----------|-----------|------------|-----------|-----------|-------|
 | Foward | Turn Left | Backwards | Turn Right | Walk Left | Walk Left |  Run  |
 
-|            1             |             2            |
-|--------------------------|--------------------------|
-| change shader on layer 1 | change shader on layer 2 |
+**Map 4 controls**:
+
+|     A     |     D      |
+|-----------|------------|
+| Move Left | Move Right |
 
 
 
 ## Features
 
- - **12** easy to use godot shaders
- 
- - **Frequentily updated**
+ - **18** easy to use godot shaders
 
- - 2 well done **demo projects**
+ - 4 well done **example projects**
 
 
 
@@ -202,44 +189,44 @@ Unfortnetly, some shaders arent 100% perfect.
 
  - The Color Precission shader's dithering dont work because of Godot's limitation.
 
-
- *All the limitations should be fixed with time and from help from contributors.*
-
-
-
-## TODO
-
- - Add more shaders.
-
- - Finish and solve bugs on the PSX shaders.
+ - Some shaders may not work in GLES2, please check the used shader's header inside code for more information!
 
 
 
 ## Credits 
 
 Shaders ported by : **Ahopness ([@ahopness](http://twitter.com/ahopness "My Twitter Account"))**
-</n>
-</n>
-B&W shader made by : **demofox (ShaderToy)**
 
-Color precission shader made by : **abelcamarena (ShaderToy)**
+*B&W* shader where originaly made by : **demofox (ShaderToy)**
 
-Simple Grain shader made by : **juniorxsound (ShaderToy)**
+*Color Precission* shader where originaly made by : **abelcamarena (ShaderToy)**
 
-BetterCC shader made by **Wunkolo(ShaderToy)**
+*Jpeg Compression* shader where originaly made by : **paniq (ShaderToy)**
 
-Lens Distortion shader made by **hiulit(GitHub)**
+*Better CC* shader where originaly made by **Wunkolo(ShaderToy)**
 
-Sharpness shader made by **Nihilistic_Furry(ShaderToy)**
+*Lens Distortion* shader where originaly made by **jcant0n(ShaderToy)**
 
-Grain shader made by **spl!te(GitHub) & martinsh(Personal Blog)**
+*Sharpness* shader where originaly made by **Nihilistic_Furry(ShaderToy)**
 
-TV shader made by : **ehj1 (ShaderToy)**
+*Grain* shader where originaly made by **spl!te(GitHub) & martinsh(Personal Blog)**
 
-VHS shader made by : **FMS_Cat (ShaderToy)**
+*Simple Grain* shader where originaly made by : **juniorxsound (ShaderToy)**
 
-VHS glitch shader made by : **keijiro (GitHub)**
+*TV* shader where originaly made by : **ehj1 (ShaderToy)**
 
-VHS pause shader made by : **caaaaaaarter (ShaderToy)**
+*VHS* shader where originaly made by : **FMS_Cat (ShaderToy)**
 
-VHS simple glitch pause shader made by : **Gaktan (ShaderToy)**
+*VHS Pause* shader where originaly made by : **caaaaaaarter (ShaderToy)**
+
+*NTSC* shader where originaly made by : **ompuco (ShaderToy)**
+
+*NTSC Basic* shader where originaly made by : **keijiro (Github)**
+
+*Glitch* shader where originaly made by : **keijiro (GitHub)**
+
+*Simple Glitch* shader where originaly made by : **Gaktan (ShaderToy)**
+
+*Blur* shader where originaly made by : **jcant0n (ShaderToy)**
+
+*Hello World* and *Hello World 2* shaders where originaly made by : **Patricio Gonzalez Vivo** 

@@ -1,13 +1,14 @@
 //SHADER ORIGINALY CREADED BY "Wunkolo" FROM SHADERTOY
 //PORTED AND MODIFYED  TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
+//COMATIBLE WITH : GLES2, GLES3, WEBGL
 //SHADERTOY LINK : https://www.shadertoy.com/view/tllfRf
 
 shader_type canvas_item;
 
-uniform vec3 Shadows = vec3(0.0, 0.0, 0.0); // Remove some red from the shadows(make it more cyan)
-uniform vec3 Midtones = vec3(0.0, 0.0, 0.0); // Add a bit of blue-green to the midtones
-uniform vec3 Hilights = vec3(0.5, 0.0, 0.0); // Add some red to the hilights
+uniform vec4 Shadows :hint_color = vec4(0.0, 0.0, 0.0, 1.0);
+uniform vec4 Midtones :hint_color = vec4(0.0, 0.0, 0.0, 1.0); 
+uniform vec4 Hilights :hint_color = vec4(0.0, 0.0, 0.0, 1.0);
 
 vec3 InvLerp( vec3 A, vec3 B, vec3 t){
 	return (t - A) / (B - A);
@@ -15,9 +16,9 @@ vec3 InvLerp( vec3 A, vec3 B, vec3 t){
 
 vec3 ColorGrade( in vec3 InColor ){
 	// Calculate the three offseted colors up-front
-	vec3 OffShadows  = InColor + Shadows;
-	vec3 OffMidtones = InColor + Midtones;
-	vec3 OffHilights = InColor + Hilights;
+	vec3 OffShadows  = InColor + Shadows.xyz;
+	vec3 OffMidtones = InColor + Midtones.xyz;
+	vec3 OffHilights = InColor + Hilights.xyz;
 	
 	// Linearly interpolate between the 3 new colors, piece-wise
 	return mix(

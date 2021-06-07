@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://Map/Buildings.fbx" type="PackedScene" id=1]
-
-[node name="Buildings" instance=ExtResource( 1 )]

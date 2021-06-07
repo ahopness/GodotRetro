@@ -1,0 +1,327 @@
+[gd_scene load_steps=47 format=2]
+
+[ext_resource path="res://Examples/Map4 - 2D/texSky.jpg" type="Texture" id=1]
+[ext_resource path="res://Examples/Map4 - 2D/texHouse3.png" type="Texture" id=2]
+[ext_resource path="res://Examples/Map4 - 2D/texHouse2.png" type="Texture" id=3]
+[ext_resource path="res://Examples/Map4 - 2D/texGrass.png" type="Texture" id=4]
+[ext_resource path="res://Examples/Map4 - 2D/texHouse1.png" type="Texture" id=5]
+[ext_resource path="res://GodotRetro/Screen Shaders/JpegCompression.shader" type="Shader" id=6]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0001.png" type="Texture" id=7]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Idle/side.png" type="Texture" id=8]
+[ext_resource path="res://Examples/Map4 - 2D/scrPlayer.gd" type="Script" id=9]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0010.png" type="Texture" id=10]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0022.png" type="Texture" id=11]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0016.png" type="Texture" id=12]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0019.png" type="Texture" id=13]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0009.png" type="Texture" id=14]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0002.png" type="Texture" id=15]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0025.png" type="Texture" id=16]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0014.png" type="Texture" id=17]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0021.png" type="Texture" id=18]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0015.png" type="Texture" id=19]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0024.png" type="Texture" id=20]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0008.png" type="Texture" id=21]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0007.png" type="Texture" id=22]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0012.png" type="Texture" id=23]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0005.png" type="Texture" id=24]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0006.png" type="Texture" id=25]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0017.png" type="Texture" id=26]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0011.png" type="Texture" id=27]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0004.png" type="Texture" id=28]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0020.png" type="Texture" id=29]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0023.png" type="Texture" id=30]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0003.png" type="Texture" id=31]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0013.png" type="Texture" id=32]
+[ext_resource path="res://Examples/Map4 - 2D/Player/Walking/Side/0018.png" type="Texture" id=33]
+[ext_resource path="res://Examples/Map4 - 2D/texTree.png" type="Texture" id=34]
+[ext_resource path="res://Examples/Map4 - 2D/texFlower2.png" type="Texture" id=35]
+[ext_resource path="res://Examples/Map4 - 2D/texFlower1.png" type="Texture" id=36]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/BetterCC.shader" type="Shader" id=37]
+[ext_resource path="res://Examples/Map4 - 2D/texSun.jpg" type="Texture" id=38]
+[ext_resource path="res://Examples/Map4 - 2D/shrWind.shader" type="Shader" id=39]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 39 )
+shader_param/speed = 2.0
+shader_param/minStrength = 0.0
+shader_param/maxStrength = 0.3
+shader_param/strengthScale = 100.0
+shader_param/interval = 2.0
+shader_param/detail = 1.0
+shader_param/distortion = 0.7
+shader_param/heightOffset = 0.0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 60 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 15 ), ExtResource( 31 ), ExtResource( 28 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 14 ), ExtResource( 10 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 32 ), ExtResource( 17 ), ExtResource( 19 ), ExtResource( 12 ), ExtResource( 26 ), ExtResource( 33 ), ExtResource( 13 ), ExtResource( 29 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 30 ), ExtResource( 20 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "walk",
+"speed": 24.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 10, 40 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 6 )
+shader_param/color_depth = 14.0
+shader_param/color_number = 7.8
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 37 )
+shader_param/Shadows = Color( 0.203922, 0, 0.184314, 1 )
+shader_param/Midtones = Color( 0.0666667, 0.0705882, 0, 1 )
+shader_param/Hilights = Color( 0.027451, 0, 0.164706, 1 )
+
+[sub_resource type="CanvasItemMaterial" id=7]
+blend_mode = 1
+light_mode = 1
+
+[node name="scnMap4" type="Node2D"]
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Sky" type="ParallaxBackground" parent="Map"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Map/Sky"]
+motion_scale = Vector2( 0.5, 1 )
+
+[node name="bg" type="Sprite" parent="Map/Sky/ParallaxLayer"]
+position = Vector2( -80.6382, -182.228 )
+scale = Vector2( 0.913784, 0.913784 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Grass" type="Node2D" parent="Map"]
+
+[node name="texGrass" type="Sprite" parent="Map/Grass"]
+position = Vector2( -200.455, 122.621 )
+z_index = -2
+texture = ExtResource( 4 )
+centered = false
+
+[node name="texGrass2" type="Sprite" parent="Map/Grass"]
+position = Vector2( 311.545, 122.621 )
+z_index = -2
+texture = ExtResource( 4 )
+centered = false
+
+[node name="texGrass3" type="Sprite" parent="Map/Grass"]
+position = Vector2( 823.545, 122.621 )
+z_index = -2
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Houses" type="Node2D" parent="Map"]
+
+[node name="texHouse3" type="Sprite" parent="Map/Houses"]
+modulate = Color( 1, 0.929412, 0.988235, 1 )
+position = Vector2( 252.297, 50.9613 )
+scale = Vector2( 0.266196, 0.266196 )
+texture = ExtResource( 2 )
+
+[node name="texHouse2" type="Sprite" parent="Map/Houses"]
+modulate = Color( 1, 0.945098, 0.996078, 1 )
+position = Vector2( 632.839, 59.3399 )
+scale = Vector2( 0.383851, 0.383851 )
+texture = ExtResource( 3 )
+
+[node name="texHouse1" type="Sprite" parent="Map/Houses"]
+modulate = Color( 0.988235, 0.807843, 1, 1 )
+position = Vector2( 977.126, 122.621 )
+scale = Vector2( 0.326414, 0.326414 )
+texture = ExtResource( 5 )
+
+[node name="Flowers" type="Node2D" parent="Map"]
+
+[node name="texFlower2" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 141.553, 170.938 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 35 )
+
+[node name="texFlower8" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 261.897, 226.397 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 35 )
+
+[node name="texFlower9" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 521.935, 172.003 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 35 )
+
+[node name="texFlower10" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 713.069, 226.397 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 35 )
+
+[node name="texFlower11" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 862.201, 204.797 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 35 )
+
+[node name="texFlower1" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 174.589, 211.997 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 36 )
+
+[node name="texFlower12" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 13.1862, 193.873 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 36 )
+
+[node name="texFlower3" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 311.545, 186.673 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 36 )
+
+[node name="texFlower4" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 477.667, 219.197 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 36 )
+
+[node name="texFlower5" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 624.439, 211.997 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 36 )
+
+[node name="texFlower6" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 757.526, 164.803 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 36 )
+
+[node name="texFlower7" type="Sprite" parent="Map/Flowers"]
+position = Vector2( 1013.79, 219.197 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 36 )
+
+[node name="Trees" type="Node2D" parent="Map"]
+
+[node name="texTree" type="Sprite" parent="Map/Trees"]
+material = SubResource( 1 )
+position = Vector2( 810.464, 52.1605 )
+scale = Vector2( 0.610084, 0.610084 )
+z_index = -1
+texture = ExtResource( 34 )
+
+[node name="texTree2" type="Sprite" parent="Map/Trees"]
+material = SubResource( 1 )
+position = Vector2( 445.302, 49.8023 )
+scale = Vector2( 0.610084, 0.610084 )
+z_index = -1
+texture = ExtResource( 34 )
+
+[node name="texTree3" type="Sprite" parent="Map/Trees"]
+material = SubResource( 1 )
+position = Vector2( 51.6568, 67.6202 )
+scale = Vector2( 0.610084, 0.610084 )
+texture = ExtResource( 34 )
+
+[node name="texTree4" type="Sprite" parent="Map/Trees"]
+material = SubResource( 1 )
+position = Vector2( 1164.24, 67.6202 )
+scale = Vector2( 0.610084, 0.610084 )
+texture = ExtResource( 34 )
+
+[node name="Collision" type="Node2D" parent="Map"]
+
+[node name="ends" type="StaticBody2D" parent="Map/Collision"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Collision/ends"]
+position = Vector2( 0, 180 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Map/Collision/ends"]
+position = Vector2( 1120.78, 179.473 )
+shape = SubResource( 2 )
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Player" type="KinematicBody2D" parent="Player"]
+position = Vector2( 51.6568, 180.673 )
+script = ExtResource( 9 )
+
+[node name="sprPlayer" type="AnimatedSprite" parent="Player/Player"]
+scale = Vector2( 0.215045, 0.215045 )
+frames = SubResource( 3 )
+animation = "idle"
+playing = true
+flip_h = true
+
+[node name="colPlaer" type="CollisionShape2D" parent="Player/Player"]
+position = Vector2( 0, 6 )
+shape = SubResource( 4 )
+
+[node name="camPlayer" type="Camera2D" parent="Player/Player"]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 1120
+limit_bottom = 240
+limit_smoothed = true
+smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="Effects" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="CanvasLayer/Effects"]
+position = Vector2( 159.972, 120 )
+scale = Vector2( 1.59973, 1.2 )
+z_index = 3
+copy_mode = 2
+
+[node name="JpegCompression" type="ColorRect" parent="CanvasLayer/Effects/BackBufferCopy"]
+material = SubResource( 5 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBufferCopy2" type="BackBufferCopy" parent="CanvasLayer/Effects"]
+position = Vector2( 159.972, 120 )
+scale = Vector2( 1.59973, 1.2 )
+z_index = 3
+copy_mode = 2
+
+[node name="CC" type="ColorRect" parent="CanvasLayer/Effects/BackBufferCopy2"]
+material = SubResource( 6 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="texSun" type="Sprite" parent="CanvasLayer2"]
+modulate = Color( 1, 1, 1, 0.333333 )
+material = SubResource( 7 )
+position = Vector2( -77.548, 0 )
+scale = Vector2( 0.649498, 0.653951 )
+texture = ExtResource( 38 )
+centered = false
+flip_h = true

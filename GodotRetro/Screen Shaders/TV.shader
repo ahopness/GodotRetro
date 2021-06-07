@@ -1,27 +1,21 @@
 //SHADER ORIGINALY CREADED BY "ehj1" FROM SHADERTOY
 //PORTED AND MODIFYED TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
+//COMATIBLE WITH : GLES2, GLES3
 //SHADERTOY LINK : https://www.shadertoy.com/view/ldXGW4
 
 shader_type canvas_item;
-render_mode blend_mix;
 
-// change these values to 0.0 to turn off individual effects
-uniform float vertJerkOpt :hint_range(0,1) = 1.0;
-uniform float vertMovementOpt :hint_range(0,1) = 1.0;
-uniform float bottomStaticOpt :hint_range(0,5) = 1.0;
-uniform float scalinesOpt :hint_range(0,6) = 1.0;
-uniform float rgbOffsetOpt :hint_range(0,2) = 1.0;
-uniform float horzFuzzOpt :hint_range(0,5) = 1.0;
-
-varying float time;
+uniform float vertJerkOpt :hint_range(0,1) = 0.2;
+uniform float vertMovementOpt :hint_range(0,1) = 0.0;
+uniform float bottomStaticOpt :hint_range(0,5) = 0.0;
+uniform float bottomStaticStrenth :hint_range(0.0, 1.5) = 0.7;
+uniform float scalinesOpt :hint_range(0,6) = 0.8;
+uniform float rgbOffsetOpt :hint_range(0,2) = 0.2;
+uniform float horzFuzzOpt :hint_range(0,5) = 0.15;
 
 // Noise generation functions borrowed from: 
 // https://github.com/ashima/webgl-noise/blob/master/src/noise2D.glsl
-
-void vertex(){
-	time = TIME;
-}
 
 vec3 mod289vec3(vec3 x){
 	return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -83,8 +77,8 @@ float snoise(vec2 v){
 	return 130.0 * dot(m, g);
 }
 
-float staticV(vec2 uv){
-	float staticHeight = snoise(vec2(9.0,float(time)*1.2+3.0))*0.3+5.0;
+float staticV(vec2 uv, float time){
+	float staticHeight = snoise(vec2(9.0,float(time)*1.2+3.0))*bottomStaticStrenth+5.0;
 	float staticAmount = snoise(vec2(1.0,time*1.2-6.0))*0.1+0.3;
 	float staticStrength = snoise(vec2(-9.75,time*0.6-3.0))*2.0+2.0;
 	return (1.0-step(snoise(vec2(5.0*pow(time,2.0)+pow(uv.x*7.0,1.2),pow((mod(time,100.0)+100.0)*uv.y*0.3+3.0,staticHeight))),staticAmount))*staticStrength;
@@ -92,8 +86,7 @@ float staticV(vec2 uv){
 
 
 void fragment(){
-	vec2 uv =  UV.xy;
-	uv.y = (uv.y - 1.0) * -1.0;
+	vec2 uv =  FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 	
 	float jerkOffset = (1.0-step(snoise(vec2(TIME*1.3,5.0)),0.8))*0.05;
 	
@@ -114,7 +107,7 @@ void fragment(){
 	for (float y = -1.0; y <= 1.0; y += 1.0) {
 		float maxDist = 5.0/200.0;
 		float dist = y/200.0;
-		staticVal += staticV(vec2(uv.x,uv.y+dist))*(maxDist-abs(dist))*1.5;
+		staticVal += staticV(vec2(uv.x,uv.y+dist), TIME)*(maxDist-abs(dist))*1.5;
 	}
 	
 	staticVal *= bottomStaticOpt;

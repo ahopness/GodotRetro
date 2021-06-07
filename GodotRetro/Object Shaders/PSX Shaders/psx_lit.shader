@@ -3,7 +3,7 @@
 //GITHUB LINK : https://github.com/marmitoTH/godot-psx-shaders
 
 shader_type spatial; 
-render_mode skip_vertex_transform, diffuse_lambert_wrap, specular_disabled, cull_disabled;
+render_mode skip_vertex_transform, diffuse_lambert_wrap, specular_disabled, cull_disabled, depth_draw_alpha_prepass;
 
 uniform vec4 color : hint_color;
 uniform sampler2D albedoTex : hint_albedo;

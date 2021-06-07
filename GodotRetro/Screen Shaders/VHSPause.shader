@@ -1,12 +1,13 @@
 //SHADER ORIGINALY CREADED BY "caaaaaaarter" FROM SHADERTOY
 //PORTED AND MODIFYED  TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
+//COMATIBLE WITH : GLES2, GLES3
 //SHADERTOY LINK : https://www.shadertoy.com/view/4lB3Dc
 
 shader_type canvas_item;
 
-uniform float shake_amount_x  : hint_range(1, 500) = 64.0;
-uniform float shake_amount_y  : hint_range(1, 500) = 32.0;
+uniform float shake_amount_x  : hint_range(1, 500) = 250.0;
+uniform float shake_amount_y  : hint_range(1, 500) = 40.0;
 uniform float white_hlines : hint_range(0, 50) = 50;
 uniform float white_vlines : hint_range(0,80) = 80;
 
@@ -17,8 +18,7 @@ float rand(vec2 co){
 void fragment(){
 	vec4 texColor = vec4(0);
 	// get position to sample
-	vec2 samplePosition = UV.xy;
-	samplePosition.y = (samplePosition.y - 1.0) * -1.0;
+	vec2 samplePosition =  FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 	
 	float whiteNoise = 9999.0;
 	

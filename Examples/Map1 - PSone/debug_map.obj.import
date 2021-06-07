@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/debug_map.obj-226b52b83d7d5715c0a942986749fb1d.mesh"
+
+[deps]
+
+files=[ "res://.import/debug_map.obj-226b52b83d7d5715c0a942986749fb1d.mesh" ]
+
+source_file="res://Examples/Map1 - PSone/debug_map.obj"
+dest_files=[ "res://.import/debug_map.obj-226b52b83d7d5715c0a942986749fb1d.mesh", "res://.import/debug_map.obj-226b52b83d7d5715c0a942986749fb1d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

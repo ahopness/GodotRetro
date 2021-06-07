@@ -1,0 +1,257 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://GodotRetro/Other/Images/CRT Frame.png" type="Texture" id=1]
+[ext_resource path="res://Examples/Map1 - PSone/debug_cube.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Examples/Map1 - PSone/debug_map.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Examples/Map1 - PSone/debug_npc.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Examples/Map1 - PSone/mat_default.tres" type="Material" id=5]
+[ext_resource path="res://Examples/Map1 - PSone/sfx_waterstep.wav" type="AudioStream" id=6]
+[ext_resource path="res://Examples/Map1 - PSone/scrPlayer.gd" type="Script" id=7]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/Sharpness.shader" type="Shader" id=8]
+[ext_resource path="res://GodotRetro/Screen Shaders/VHS.shader" type="Shader" id=9]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+height = 1.5
+
+[sub_resource type="Environment" id=2]
+background_mode = 1
+background_color = Color( 0.92549, 0.92549, 0.92549, 1 )
+ambient_light_color = Color( 0.968627, 0.968627, 0.968627, 1 )
+fog_enabled = true
+fog_color = Color( 0.921569, 0.921569, 0.921569, 1 )
+fog_sun_color = Color( 0.913725, 0.913725, 0.913725, 1 )
+fog_depth_begin = 4.7
+fog_depth_end = 50.0
+auto_exposure_scale = 0.01
+ssao_quality = 0
+ssao_blur = 2
+dof_blur_far_distance = 7.42
+dof_blur_far_quality = 0
+dof_blur_near_distance = 4.91
+glow_strength = 1.33
+
+[sub_resource type="Animation" id=3]
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("player_body/player_head/player_cam:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.1, -0.5 ), Vector3( 0, -0.1, -0.5 ), Vector3( 0, 0.1, -0.5 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("player_body/player_foot/sfx_footstep")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "stop"
+} ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("player_body/player_head/player_cam:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.15, -0.5 ), Vector3( 0, -0.15, -0.5 ), Vector3( 0, 0.15, -0.5 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("player_body/player_foot/sfx_footstep")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
+}
+
+[sub_resource type="Environment" id=5]
+background_mode = 1
+background_color = Color( 0.92549, 0.92549, 0.92549, 1 )
+ambient_light_color = Color( 0.968627, 0.968627, 0.968627, 1 )
+fog_enabled = true
+fog_color = Color( 0.921569, 0.921569, 0.921569, 1 )
+fog_sun_color = Color( 0.913725, 0.913725, 0.913725, 1 )
+fog_depth_begin = 4.7
+fog_depth_end = 50.0
+auto_exposure_scale = 0.01
+ssao_quality = 0
+ssao_blur = 2
+dof_blur_far_distance = 7.42
+dof_blur_far_quality = 0
+dof_blur_near_distance = 4.91
+glow_strength = 1.33
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 8 )
+shader_param/sharpen_amount = 1.0
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 9 )
+shader_param/tape_wave_amount = 0.003
+shader_param/tape_crease_amount = 4.237
+shader_param/color_displacement = 0.0
+shader_param/lines_velocity = 0.1
+
+[node name="scnMap1" type="Spatial"]
+
+[node name="Map" type="Node" parent="."]
+
+[node name="debug_map" type="CSGMesh" parent="Map"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 5 )
+use_collision = true
+mesh = ExtResource( 3 )
+material = ExtResource( 5 )
+
+[node name="Player" type="Node" parent="."]
+
+[node name="player_main" type="KinematicBody" parent="Player"]
+transform = Transform( 0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -8.22059, 2.02321, 6.87202 )
+script = ExtResource( 7 )
+
+[node name="player_colision" type="CollisionShape" parent="Player/player_main"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="player_body" type="Spatial" parent="Player/player_main"]
+
+[node name="player_head" type="Spatial" parent="Player/player_main/player_body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0 )
+
+[node name="player_cam" type="Camera" parent="Player/player_main/player_body/player_head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -0.5 )
+environment = SubResource( 2 )
+current = true
+
+[node name="player_foot" type="Spatial" parent="Player/player_main/player_body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+
+[node name="sfx_footstep" type="AudioStreamPlayer" parent="Player/player_main/player_body/player_foot"]
+stream = ExtResource( 6 )
+volume_db = -6.42
+bus = "SFX"
+
+[node name="player_anm" type="AnimationPlayer" parent="Player/player_main"]
+anims/anm_idle = SubResource( 3 )
+anims/anm_walking = SubResource( 4 )
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="Cubes" type="Node" parent="Objects"]
+
+[node name="debug_cube" type="CSGMesh" parent="Objects/Cubes"]
+transform = Transform( 0.970119, 0.00493029, -0.24258, -0.00444893, 0.999987, 0.00253208, 0.24259, -0.00137719, 0.970128, -11.1506, 1.92377, 17.2825 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = ExtResource( 5 )
+
+[node name="debug_cube2" type="CSGMesh" parent="Objects/Cubes"]
+transform = Transform( 0.300893, 0.0023498, -0.399321, -0.00222447, 0.499993, 0.00126604, 0.399322, 0.00101467, 0.3009, -9.31175, 1.42151, 17.6184 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = ExtResource( 5 )
+
+[node name="NPCs" type="Node" parent="Objects"]
+
+[node name="debug_npc" type="CSGMesh" parent="Objects/NPCs"]
+transform = Transform( 0.676708, -0.0126336, 0.178624, 0.0132812, 0.699874, -0.000814963, -0.178577, 0.00417691, 0.676826, -13.8789, 0.795216, -6.24269 )
+use_collision = true
+mesh = ExtResource( 4 )
+material = ExtResource( 5 )
+
+[node name="debug_npc2" type="CSGMesh" parent="Objects/NPCs"]
+transform = Transform( -0.284019, 0.00464477, -0.639775, 0.0132812, 0.699874, -0.000814941, 0.639653, -0.0124692, -0.284056, -3.87888, 0.795216, -6.24269 )
+use_collision = true
+mesh = ExtResource( 4 )
+material = ExtResource( 5 )
+
+[node name="Data" type="Node" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Data"]
+environment = SubResource( 5 )
+
+[node name="UI" type="Node" parent="."]
+
+[node name="Effects" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="UI/Effects"]
+position = Vector2( 160, 120 )
+scale = Vector2( 1.6, 1.2 )
+copy_mode = 2
+
+[node name="Sharpness" type="ColorRect" parent="UI/Effects/BackBufferCopy"]
+material = SubResource( 6 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BackBufferCopy2" type="BackBufferCopy" parent="UI/Effects"]
+position = Vector2( 160, 120 )
+scale = Vector2( 1.6, 1.2 )
+copy_mode = 2
+
+[node name="VHS" type="ColorRect" parent="UI/Effects/BackBufferCopy2"]
+material = SubResource( 7 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Frame" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CRT Frame" type="TextureRect" parent="UI/Frame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -3.05176e-05
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}

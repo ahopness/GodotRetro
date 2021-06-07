@@ -1,11 +1,12 @@
 //SHADER ORIGINALY CREADED BY "Nihilistic_Furry" FROM SHADERTOY
 //PORTED AND MODIFYED  TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
+//COMATIBLE WITH : GLES2, GLES3, WEBGL
 //SHADERTOY LINK : https://www.shadertoy.com/view/wsK3Wt
 
 shader_type canvas_item;
 
-uniform float sharpen_amount :hint_range(0,4) = 2.0;
+uniform float sharpen_amount :hint_range(0,4) = 1.0;
 
 vec4 sharpenMask (sampler2D st, vec2 fc, vec2 sps){
 	// Sharpen detection matrix [0,1,0],[1,-4,1],[0,1,0]
