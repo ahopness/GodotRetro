@@ -152,7 +152,7 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 4 free easy to learn examples are available with the pack.
 
 ![MAP 1](https://i.imgur.com/WBhzS5a.gif "MAP 1")
-![MAP 4](https://media.discordapp.net/attachments/719925795128082546/851577007677898792/2D_2.gif "MAP 4")
+![MAP 4](https://media.discordapp.net/attachments/719925795128082546/851577007677898792/2D_2.gif?width=542&height=406 "MAP 4")
 
 
 **General controls**:
