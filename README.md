@@ -4,7 +4,7 @@
 
 - - - - - - -
 
-[![License](https://img.shields.io/github/license/Ahopness/GodotRetro?color=b339e3&style=flat-square "License")](http://github.com/Ahopness/GodotRetro/blob/main/LICENSE "License")
+[![License](https://img.shields.io/badge/license-CC0%20&%20MIT-b339e3?style=flat-square "License")](http://github.com/Ahopness/GodotRetro/blob/main/LICENSE "License")
 [![Stars](https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square "Stars")](http://github.com/Ahopness/GodotRetro/stargazers "Stars")
 [![Forks](https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square "Forks")](http://github.com/Ahopness/GodotRetro/network/member "Forks")
 [![Releases](https://img.shields.io/badge/version-3.0.0-b339e3?style=flat-square "Releases")](http://github.com/Ahopness/GodotRetro/releases "Releases")
@@ -93,11 +93,11 @@ The shaders looks the best when they are combined!
 
 This scene uses the following combination : **Lens Distortion + Grain + TV**
 
-![MAP 3](https://i.imgur.com/PnSuZkd.mp4 "MAP 3")
+![MAP 3](https://i.imgur.com/TRFnZoY.gif "MAP 3")
 
 And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
-![MAP 2](https://i.imgur.com/sTt23Xf.mp4 "MAP 2")
+![MAP 2](https://i.imgur.com/FCEKDYa.gif "MAP 2")
 
 
 - Tip 1 : **Sharpness** is a must have if using any of the *TV*, *VHS* or the *NTSC* shaders for getting a more realistic retro effect!
@@ -151,8 +151,8 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 4 free easy to learn examples are available with the pack.
 
-![MAP 1](https://i.imgur.com/uXOVbsK.mp4 "MAP 1")
-![MAP 4](https://i.imgur.com/WF2kd5W.mp4 "MAP 4")
+![MAP 1](https://i.imgur.com/WBhzS5a.gif "MAP 1")
+![MAP 4](https://media.discordapp.net/attachments/719925795128082546/851577007677898792/2D_2.gif "MAP 4")
 
 
 **General controls**:
