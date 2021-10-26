@@ -93,11 +93,11 @@ The shaders looks the best when they are combined!
 
 This scene uses the following combination : **Lens Distortion + Grain + TV**
 
-![MAP 2](https://i.imgur.com/FCEKDYa.gif "MAP 2")
+![Map4](https://user-images.githubusercontent.com/56614267/138868860-0a105613-279c-4918-84b1-a1208ad206f8.png)
 
 And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
-![MAP 3](https://i.imgur.com/TRFnZoY.gif "MAP 3")
+![Map3](https://user-images.githubusercontent.com/56614267/138868037-8d0ec41a-9e59-47ec-9873-fc9a2ff014b9.gif)
 
 
 - Tip 1 : **Sharpness** is a must have if using any of the *TV*, *VHS* or the *NTSC* shaders for getting a more realistic retro effect!
@@ -151,10 +151,9 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 4 free easy to learn examples are available with the pack.
 
-![MAP 1](https://i.imgur.com/WBhzS5a.gif "MAP 1")
+![PSX](https://user-images.githubusercontent.com/56614267/138868105-6b24ea23-ba13-4160-b936-35a43f9993d5.gif)
 
-![MAP 4](https://media.discordapp.net/attachments/719925795128082546/851577007677898792/2D_2.gif "MAP 4")
-
+![2D](https://user-images.githubusercontent.com/56614267/138868168-803a3cd0-82c9-4b83-8e1e-9bc614d5681c.png)
 
 **General controls**:
 
