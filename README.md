@@ -39,11 +39,11 @@
 
 All shaders are licensed under **CC0**, with the exeption of the *Glitch* and the *NTSC Basic* shaders, who are licensed under **MIT**. 
 
-* Example Scenes are Propietary
+* Example Scenes
 
-* *Models*, *scripts*, *textures* and *sounds* are all under **CC0**.
+*Models*, *scripts*, *textures* and *sounds* are all under **CC0**.
 
-* The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed under **MIT**.
+The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed under **MIT**.
 
 
 
