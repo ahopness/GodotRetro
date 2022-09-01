@@ -3,11 +3,10 @@
 //LICENSE : CC0
 //SHADERTOY LINK : https://thebookofshaders.com/edit.php#03/space.frag
 
-shader_type spatial;
-render_mode cull_disabled, specular_disabled, diffuse_lambert;
+shader_type canvas_item;
 
 void fragment(){
 	vec2 st = UV;
-	vec3 final = vec3(st.x, st.y, 0.0);
-	ALBEDO = final;
+	vec4 final = vec4(st.x, st.y, 0.0, 1.0);
+	COLOR = final;
 }

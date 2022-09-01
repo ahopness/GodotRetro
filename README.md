@@ -1,18 +1,16 @@
-# Godot Retro
-
-![Logo](https://i.imgur.com/shnmTe5.png "Logo")
-
-- - - - - - -
-
-[![License](https://img.shields.io/badge/license-CC0%20&%20MIT-b339e3?style=flat-square "License")](http://github.com/Ahopness/GodotRetro/blob/main/LICENSE "License")
-[![Stars](https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square "Stars")](http://github.com/Ahopness/GodotRetro/stargazers "Stars")
-[![Forks](https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square "Forks")](http://github.com/Ahopness/GodotRetro/network/member "Forks")
-[![Releases](https://img.shields.io/badge/version-3.0.0-b339e3?style=flat-square "Releases")](http://github.com/Ahopness/GodotRetro/releases "Releases")
-![Repo Size](https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square "Repo Size")
-![Last Commition](https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square "Last Commition")
-[![Twitter](https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square "Twitter")](http://twitter.com/ahopness "Twitter")
-
-
+<div align="center">
+    <p align="center"> <i> 💜 Ｇｏｄｏｔ Ｒｅｔｒｏ 💜 </i> </p>
+    <p align="center"> <i> Ｏｌｄ－ｓｃｈｏｏｌ ｓｈａｄｅｒ ｐａｃｋ </i> </p>
+    <img src="https://i.imgur.com/shnmTe5.png" alt="Logo" align="right" width="50%"></img>
+    <img src="https://img.shields.io/badge/license-CC0%20&%20MIT-b339e3?style=flat-square" align="center"></img>
+    <img src="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
+    <img src="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
+    <img src="https://img.shields.io/badge/version-3.0.0-b339e3?style=flat-square" align="center"></img>
+    <img src="https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
+    <img src="https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
+    <img src="https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square" align="center"></img>
+    <hr>
+</div>
 
 ## Sumary
 
@@ -59,6 +57,8 @@ The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed und
 
 - Jpeg Compression
 
+- Dithering
+
 - Lens Distortion
 
 - NTSC
@@ -70,6 +70,8 @@ The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed und
 - VHS
 
 - VHS Pause
+
+- Accurate CRT
 
 - B&W
 
@@ -93,11 +95,11 @@ The shaders looks the best when they are combined!
 
 This scene uses the following combination : **Lens Distortion + Grain + TV**
 
-![Map4](https://user-images.githubusercontent.com/56614267/138868860-0a105613-279c-4918-84b1-a1208ad206f8.png)
+<img src="https://user-images.githubusercontent.com/56614267/138868860-0a105613-279c-4918-84b1-a1208ad206f8.png" width="50%"></img>
 
 And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
-![Map3](https://user-images.githubusercontent.com/56614267/138868037-8d0ec41a-9e59-47ec-9873-fc9a2ff014b9.gif)
+<img src="https://user-images.githubusercontent.com/56614267/138868037-8d0ec41a-9e59-47ec-9873-fc9a2ff014b9.gif" width="50%"></img>
 
 
 - Tip 1 : **Sharpness** is a must have if using any of the *TV*, *VHS* or the *NTSC* shaders for getting a more realistic retro effect!
@@ -149,11 +151,13 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 ## Examples
 
-4 free easy to learn examples are available with the pack.
+5 free easy to learn examples are available with the pack.
 
-![PSX](https://user-images.githubusercontent.com/56614267/138868105-6b24ea23-ba13-4160-b936-35a43f9993d5.gif)
+<div align="left">
+   <img src="https://user-images.githubusercontent.com/56614267/138868105-6b24ea23-ba13-4160-b936-35a43f9993d5.gif" align="center" width="40%"></img>
+   <img src="https://user-images.githubusercontent.com/56614267/138868168-803a3cd0-82c9-4b83-8e1e-9bc614d5681c.png" align="center" width="40%"></img>
+</div>
 
-![2D](https://user-images.githubusercontent.com/56614267/138868168-803a3cd0-82c9-4b83-8e1e-9bc614d5681c.png)
 
 **General controls**:
 
@@ -230,3 +234,4 @@ Shaders ported by : **Ahopness ([@ahopness](http://twitter.com/ahopness "My Twit
 *Blur* shader where originaly made by : **jcant0n (ShaderToy)**
 
 *Hello World* and *Hello World 2* shaders where originaly made by : **Patricio Gonzalez Vivo** 
+

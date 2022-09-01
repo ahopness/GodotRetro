@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://GodotRetro/Object Shaders/Debug/helloworld2-2d.shader" type="Shader" id=1]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/Dithering.shader" type="Shader" id=2]
+[ext_resource path="res://GodotRetro/Object Shaders/Debug/helloworld-2d.shader" type="Shader" id=3]
+
+[sub_resource type="GDScript" id=7]
+resource_name = "Map5"
+script/source = "extends Control
+
+func _on_anm_animation_finished(anim_name):
+	$crUV.visible =! $crUV.visible
+	$anm.play(\"anm\")
+"
+
+[sub_resource type="Animation" id=5]
+resource_name = "anm"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("BackBufferCopy/fxDithering:material:shader_param/DITHERING_STRENTH")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 4, 8, 10, 12 ),
+"transitions": PoolRealArray( 0.4, 0.4, 1, 0.4, 0.4, 1 ),
+"update": 0,
+"values": [ 0.07, 0.0, 0.07, 0.07, 0.0, 0.07 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("BackBufferCopy/fxDithering:material:shader_param/COLOR_FACTOR")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4, 6, 8, 10, 12 ),
+"transitions": PoolRealArray( 1, 0.4, 0.4, 0.4, 0.4, 1 ),
+"update": 0,
+"values": [ 10.0, 10.0, 1.0, 10.0, 1.0, 10.0 ]
+}
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 3 )
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 2 )
+shader_param/SCREEN_WIDTH = 320.0
+shader_param/COLOR_FACTOR = 10.0
+shader_param/DITHERING_STRENTH = 0.07
+
+[node name="scnMap5" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 7 )
+
+[node name="anm" type="AnimationPlayer" parent="."]
+autoplay = "anm"
+anims/anm = SubResource( 5 )
+
+[node name="crRainbow" type="ColorRect" parent="."]
+material = SubResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="crUV" type="ColorRect" parent="."]
+material = SubResource( 6 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+position = Vector2( 160, 120 )
+scale = Vector2( 1.6, 1.2 )
+copy_mode = 2
+
+[node name="fxDithering" type="ColorRect" parent="BackBufferCopy"]
+material = SubResource( 3 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+
+[connection signal="animation_finished" from="anm" to="." method="_on_anm_animation_finished"]
