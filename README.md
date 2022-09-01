@@ -1,7 +1,7 @@
 <div align="center">
     <p align="center"> <i> 💜 Ｇｏｄｏｔ Ｒｅｔｒｏ 💜 </i> </p>
     <p align="center"> <i> Ｏｌｄ－ｓｃｈｏｏｌ ｓｈａｄｅｒ ｐａｃｋ </i> </p>
-    <img src="https://i.imgur.com/shnmTe5.png" alt="Logo" align="right" width="50%"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/187816590-4fc9e419-84ba-4082-bfaf-e6f02001824d.png" alt="Logo" align="right" width="50%"></img>
     <img src="https://img.shields.io/badge/license-CC0%20&%20MIT-b339e3?style=flat-square" align="center"></img>
     <img src="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
     <img src="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
@@ -153,11 +153,11 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 5 free easy to learn examples are available with the pack.
 
-<div align="left">
-   <img src="https://user-images.githubusercontent.com/56614267/138868105-6b24ea23-ba13-4160-b936-35a43f9993d5.gif" align="center" width="40%"></img>
-   <img src="https://user-images.githubusercontent.com/56614267/138868168-803a3cd0-82c9-4b83-8e1e-9bc614d5681c.png" align="center" width="40%"></img>
+<div align="center">
+   <img src="https://user-images.githubusercontent.com/56614267/138868105-6b24ea23-ba13-4160-b936-35a43f9993d5.gif" align="center" width="30%"></img>
+   <img src="https://user-images.githubusercontent.com/56614267/138868168-803a3cd0-82c9-4b83-8e1e-9bc614d5681c.png" align="center" width="30%"></img>
+   <img src="https://user-images.githubusercontent.com/56614267/187816644-c782709d-87d3-4d74-8b16-659a700fb408.png" align="center" width="30%"></img>
 </div>
-
 
 **General controls**:
 
