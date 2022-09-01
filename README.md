@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/license-CC0%20&%20MIT-b339e3?style=flat-square" align="center"></img>
     <img src="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
     <img src="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
-    <img src="https://img.shields.io/badge/version-3.0.0-b339e3?style=flat-square" align="center"></img>
+    <img src="https://img.shields.io/badge/version-3.5.0-b339e3?style=flat-square" align="center"></img>
     <img src="https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
     <img src="https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
     <img src="https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square" align="center"></img>
@@ -181,9 +181,9 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 ## Features
 
- - **18** easy to use godot shaders
+ - **22** easy to use godot shaders
 
- - 4 well done **example projects**
+ - 5 well done **example projects**
 
 
 
