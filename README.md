@@ -191,8 +191,6 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 Unfortnetly, some shaders arent 100% perfect.
 
- - The Color Precission shader's dithering dont work because of Godot's limitation.
-
  - Some shaders may not work in GLES2, please check the used shader's header inside code for more information!
 
 
