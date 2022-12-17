@@ -1,5 +1,5 @@
 //SHADER ORIGINALY CREADED BY "keijiro" FROM GITHUB
-//PORTED AND MODIFYED TO GODOT BY AHOPNESS (@ahopness)
+//MODIFIED AND PORTED TO GODOT BY AHOPNESS (@ahopness)
 //LICENSE : https://github.com/keijiro/KinoGlitch#license
 //COMATIBLE WITH : GLES2, GLES3, WEBGL
 //GITHUB LINK : https://github.com/keijiro/KinoGlitch
