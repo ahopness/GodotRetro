@@ -6,6 +6,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float blur_amount :hint_range(0.0, 8.0) = 3.0;
 uniform float signal_quality :hint_range(0.0, 0.5) = 0; 
 uniform float bottom_strenth :hint_range(0.0, 6.0) = 3.0;

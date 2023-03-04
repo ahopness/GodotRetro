@@ -3,10 +3,10 @@
 //GITHUB LINK : https://github.com/marmitoTH/godot-psx-shaders
 
 shader_type spatial; 
-render_mode skip_vertex_transform, diffuse_lambert_wrap, specular_disabled, cull_disabled, unshaded, depth_draw_alpha_prepass;
+render_mode skip_vertex_transform, diffuse_lambert_wrap, specular_disabled, cull_disabled, depth_draw_opaque;
 
-uniform vec4 color : hint_color;
-uniform sampler2D albedoTex : hint_albedo;
+uniform vec4 color : source_color;
+uniform sampler2D albedoTex : filter_nearest, repeat_enable;
 uniform float specular_intensity : hint_range(0, 1);
 uniform float resolution = 256;
 uniform float cull_distance = 5;
@@ -34,6 +34,5 @@ void fragment() {
 	vec4 tex = texture(albedoTex, mix(vertex_coordinates.xy /vertex_coordinates.z, UV.xy, affine_texture_mapping_amount));
 	
 	ALBEDO = tex.rgb * color.rgb;
-	ALPHA = tex.a * color.a;
 	SPECULAR = specular_intensity;
 }

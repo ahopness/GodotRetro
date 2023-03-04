@@ -6,6 +6,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float _ScanLineJitter : hint_range(.2, 1) = .25; // (displacement, threshold)
 uniform float _VerticalJump : hint_range(0, 1) = .01;   // (amount, time)
 uniform float _HorizontalShake : hint_range(0, 1) = 0;

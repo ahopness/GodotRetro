@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://drbcap41y63px"]
+
+[ext_resource type="Texture2D" uid="uid://bfk3i7hau7fo4" path="res://Examples/Map3 - Mannequins/texMannequin.jpg" id="1_a51ke"]
+[ext_resource type="Texture2D" uid="uid://5bofvonl3qpt" path="res://Examples/Map3 - Mannequins/texMannequin_n.jpg" id="2_llgx8"]
+
+[resource]
+specular_mode = 2
+albedo_color = Color(1, 0, 0, 1)
+albedo_texture = ExtResource("1_a51ke")
+metallic_specular = 0.0
+normal_enabled = true
+normal_scale = -0.72
+normal_texture = ExtResource("2_llgx8")
+texture_filter = 0

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/sfx_waterstep.wav-056a03eeaea804aa2edb18c193acaae3.sample"
+type="AudioStreamWAV"
+uid="uid://dmoapg3a8yggb"
+path="res://.godot/imported/sfx_waterstep.wav-056a03eeaea804aa2edb18c193acaae3.sample"
 
 [deps]
 
 source_file="res://Examples/Map1 - PSone/sfx_waterstep.wav"
-dest_files=[ "res://.import/sfx_waterstep.wav-056a03eeaea804aa2edb18c193acaae3.sample" ]
+dest_files=["res://.godot/imported/sfx_waterstep.wav-056a03eeaea804aa2edb18c193acaae3.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=true
 force/max_rate_hz=11025.0
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

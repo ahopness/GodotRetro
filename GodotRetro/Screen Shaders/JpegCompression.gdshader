@@ -6,6 +6,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float color_depth :hint_range(0.0, 255.0) = 100.0;
 uniform float color_number :hint_range(0.0, 50.0) = 20.0;
 

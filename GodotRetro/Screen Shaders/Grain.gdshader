@@ -7,6 +7,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform bool colored = false; //colored noise?
 uniform float color_amount :hint_range(0, 1.3) = 0.6;
 uniform float grain_amount :hint_range(0, 0.07) = 0.025; //grain amount

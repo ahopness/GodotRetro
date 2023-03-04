@@ -6,6 +6,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float shake_amount_x  : hint_range(1, 500) = 250.0;
 uniform float shake_amount_y  : hint_range(1, 500) = 40.0;
 uniform float white_hlines : hint_range(0, 50) = 50;

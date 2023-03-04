@@ -6,9 +6,11 @@
 
 shader_type canvas_item;
 
-uniform vec4 Shadows :hint_color = vec4(0.0, 0.0, 0.0, 1.0);
-uniform vec4 Midtones :hint_color = vec4(0.0, 0.0, 0.0, 1.0); 
-uniform vec4 Hilights :hint_color = vec4(0.0, 0.0, 0.0, 1.0);
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
+uniform vec4 Shadows :source_color = vec4(0.0, 0.0, 0.0, 1.0);
+uniform vec4 Midtones :source_color = vec4(0.0, 0.0, 0.0, 1.0); 
+uniform vec4 Hilights :source_color = vec4(0.0, 0.0, 0.0, 1.0);
 
 vec3 InvLerp( vec3 A, vec3 B, vec3 t){
 	return (t - A) / (B - A);

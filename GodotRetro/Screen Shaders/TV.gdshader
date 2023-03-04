@@ -6,6 +6,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float vertJerkOpt :hint_range(0,1) = 0.2;
 uniform float vertMovementOpt :hint_range(0,1) = 0.0;
 uniform float bottomStaticOpt :hint_range(0,5) = 0.0;

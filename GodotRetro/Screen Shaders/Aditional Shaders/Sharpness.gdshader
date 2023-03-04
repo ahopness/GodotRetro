@@ -6,6 +6,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float sharpen_amount :hint_range(0,4) = 1.0;
 
 vec4 sharpenMask (sampler2D st, vec2 fc, vec2 sps){

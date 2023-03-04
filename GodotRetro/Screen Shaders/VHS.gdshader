@@ -6,12 +6,12 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float tape_wave_amount :hint_range (0, .04) = 0.003;
 uniform float tape_crease_amount :hint_range (0, 15) = 2.5;
 uniform float color_displacement :hint_range (0, 5) = 1;
 uniform float lines_velocity :hint_range (0, 5) = 0.1;
-
-const float PI = 3.14159265;
 
 vec3 tex2D( sampler2D _tex, vec2 _p ){
 	vec3 col = texture( _tex, _p ).xyz;

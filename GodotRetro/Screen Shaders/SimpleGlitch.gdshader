@@ -6,6 +6,8 @@
 
 shader_type canvas_item;
 
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
 uniform float range = 0.03;
 uniform float noiseQuality :hint_range(0,250) = 250.0;
 uniform float noiseIntensity :hint_range(0, 0.05) = 0.005;
