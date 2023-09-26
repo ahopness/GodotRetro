@@ -110,7 +110,7 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 - Tip 4 : All of the shaders can go beyond their default range values, just open the shader code and just the numbers inside the *hint_range()* function in the variables section.
 
-- Tip 5 : **AWAYS** check the headers inside the shader you are using, theres information about *compatibility*, *credits* and *licesing* in there!
+- Tip 5 : **ALWAYS** check the headers inside the shader you are using, theres information about *compatibility*, *credits* and *licesing* in there!
 
 
 
